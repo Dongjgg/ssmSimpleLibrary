@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+
+    <!--配置数据源，交给spring做-->
+    <!--取别名-->
+    <typeAliases>
+        <package name="com.dj.pojo"/>
+    </typeAliases>
+
+    <mappers>
+        <mapper class="com.dj.dao.BookMapper"/>
+        <mapper class="com.dj.dao.UserMapper"/>
+    </mappers>
+
+</configuration>
